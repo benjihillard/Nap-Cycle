@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J9r-7U-o4E">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Titlepage-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="titlepage" customModule="Nap_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.26540471789999998" green="0.57457077980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vtb-gy-ljc" appends="YES" id="ssJ-If-MU6"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="tSC-j2-h3S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Vtb-gy-ljc">
+                    <connections>
+                        <segue destination="XWa-Qr-Z0b" kind="show" id="Eeh-sY-h67"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="126.5625"/>
+        </scene>
+        <!--Selection-->
+        <scene sceneID="nOc-Lz-e8i">
+            <objects>
+                <viewController id="XWa-Qr-Z0b" customClass="selection" customModule="Nap_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qJY-1U-00u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dial" translatesAutoresizingMaskIntoConstraints="NO" id="73O-WJ-Byg">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="FG7-3S-55f"/>
+                                    <constraint firstAttribute="height" constant="414" id="wxH-cw-wuZ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="V5e-yO-1Dn" appends="YES" id="yVG-WK-i6v"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator" translatesAutoresizingMaskIntoConstraints="NO" id="oeh-Za-9mh">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="414" id="GMO-8g-LVW"/>
+                                    <constraint firstAttribute="width" constant="414" id="xbg-yB-wnd"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="V5e-yO-1Dn" appends="YES" id="Ivt-DL-sFL"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82469150830000004" green="0.5579977264" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="oeh-Za-9mh" firstAttribute="centerX" secondItem="qJY-1U-00u" secondAttribute="centerX" id="277-KZ-rD0"/>
+                            <constraint firstItem="73O-WJ-Byg" firstAttribute="centerX" secondItem="qJY-1U-00u" secondAttribute="centerX" id="Y1I-7J-gjZ"/>
+                            <constraint firstItem="73O-WJ-Byg" firstAttribute="centerY" secondItem="qJY-1U-00u" secondAttribute="centerY" id="hRH-Qi-Zve"/>
+                            <constraint firstItem="oeh-Za-9mh" firstAttribute="centerY" secondItem="qJY-1U-00u" secondAttribute="centerY" id="xQA-JQ-EF3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R7m-3X-LD8"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ix8-fh-B4E" appends="YES" id="lck-Jt-nzK"/>
+                            <outletCollection property="gestureRecognizers" destination="Frq-wy-ep2" appends="YES" id="tPv-zG-c7X"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="s6v-Rw-pPf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xyY-om-1CB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DBH-M3-xWQ">
+                                <rect key="frame" x="277" y="0.0" width="117" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings" image="setting"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dial" destination="73O-WJ-Byg" id="JC7-ty-9h2"/>
+                        <outlet property="indicator" destination="oeh-Za-9mh" id="dPX-0x-GTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yH-ub-Ylb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Frq-wy-ep2">
+                    <connections>
+                        <segue destination="cwm-Ou-LUe" kind="show" id="WdN-yo-gba"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="Ix8-fh-B4E">
+                    <connections>
+                        <segue destination="wth-Ae-u0n" kind="show" id="cFx-Rb-zDf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="V5e-yO-1Dn">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="XWa-Qr-Z0b" id="W56-vU-a7S"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2802.898550724638" y="126.5625"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="deb-Dx-dXP">
+            <objects>
+                <viewController id="wth-Ae-u0n" customClass="information" customModule="Nap_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8B-qf-6t7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="rMq-U2-pA3"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="htv-yw-iCk" appends="YES" id="Of5-ry-Paj"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="O8w-xp-Qht"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsA-rv-mYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="htv-yw-iCk"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="899"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="N3W-eC-6rx">
+            <objects>
+                <viewController id="bmR-Zb-By4" customClass="settings" customModule="Nap_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nkd-ck-gOr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="l5S-Bx-geG">
+                                <rect key="frame" x="7" y="348" width="400" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="cZQ-UA-aCy"/>
+                                    <constraint firstAttribute="height" constant="200" id="rX2-2s-ilN"/>
+                                </constraints>
+                            </stepper>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="l5S-Bx-geG" firstAttribute="centerY" secondItem="nkd-ck-gOr" secondAttribute="centerY" id="7Ir-fV-j2h"/>
+                            <constraint firstItem="l5S-Bx-geG" firstAttribute="centerX" secondItem="nkd-ck-gOr" secondAttribute="centerX" id="cUl-Px-aQt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wHW-Uh-qTX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="26u-Ox-Tc0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="34e-bs-dLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4048" y="-790"/>
+        </scene>
+        <!--Safeguard-->
+        <scene sceneID="koe-c8-1tL">
+            <objects>
+                <viewController id="cwm-Ou-LUe" customClass="safeguard" customModule="Nap_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Z7-SH-feA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="bDd-zC-dQW"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ijn-F2-FmC" appends="YES" id="eD3-zc-Bpq"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="eeG-AI-Lr9">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="6v6-Yg-7kB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RmR-i1-Ech">
+                                <rect key="frame" x="277" y="0.0" width="117" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings" image="setting"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOl-Hs-imu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="ijn-F2-FmC">
+                    <connections>
+                        <segue destination="QaO-xG-poW" kind="show" id="itd-kg-YUl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3672.4637681159425" y="126.5625"/>
+        </scene>
+        <!--Sleep-->
+        <scene sceneID="ryt-eV-lFM">
+            <objects>
+                <viewController id="QaO-xG-poW" customClass="sleep" customModule="Nap_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MF7-10-4Lj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="dxK-2A-lzE"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="s9U-kK-C3f" appends="YES" id="Kip-lX-AcW"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="UPH-y0-kCF">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="k74-X2-YNE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LOe-HJ-qAT">
+                                <rect key="frame" x="277" y="0.0" width="117" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings" image="setting"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbn-p8-rb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="s9U-kK-C3f">
+                    <connections>
+                        <segue destination="0Q3-VP-Fag" kind="show" id="C7N-8f-wgj"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4500" y="126.5625"/>
+        </scene>
+        <!--Wakeup-->
+        <scene sceneID="p7F-na-dBC">
+            <objects>
+                <viewController id="0Q3-VP-Fag" customClass="wakeup" customModule="Nap_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="asj-TO-a2o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.4771328406" green="1" blue="0.93372259059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="edV-OL-qH5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kNG-KL-8sL">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Q7e-PU-hA9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dAp-Z1-Rlo">
+                                <rect key="frame" x="279" y="0.0" width="115" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="settings" image="setting"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UQ-Fs-IMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5371.0144927536239" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qg0-Zv-W2c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J9r-7U-o4E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="aXA-Xr-CHG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uzO-2c-lmO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIB-UX-MQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dial" width="635" height="635"/>
+        <image name="indicator" width="635" height="635"/>
+        <image name="setting" width="50" height="50"/>
+    </resources>
+</document>
