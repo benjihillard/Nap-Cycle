@@ -7,14 +7,39 @@
 //
 
 import UIKit
+import UserNotifications
 
 class titlepage: UIViewController{
 
+    
+    @IBOutlet weak var z1: UIImageView!
+    @IBOutlet weak var z2: UIImageView!
+    @IBOutlet weak var z3: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Nap Cycle"
-        // Do any additional setup after loading the view.
+        
+        
+        self.z1.alpha = 0.0
+        self.z2.alpha = 0.0
+        self.z3.alpha = 0.0
+        UIView.animate(withDuration: 3.0, delay: 2, options: [.repeat, .autoreverse], animations: {
+            self.z1.alpha = 1.0
+        })
+        UIView.animate(withDuration: 3.0, delay: 1,options: [.repeat, .autoreverse], animations: {
+            self.z2.alpha = 1.0
+        })
+        UIView.animate(withDuration: 3.0, delay: 0, options: [.repeat, .autoreverse] , animations: {
+            self.z3.alpha = 1.0
+        })
+       
+       
+        
     }
+    
+    
     
 
     /*

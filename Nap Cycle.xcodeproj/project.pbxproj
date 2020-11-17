@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10FB94C255E06DF00B582B8 /* AlarmClockPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10FB94B255E06DF00B582B8 /* AlarmClockPicker.swift */; };
+		B15E6B812561D1C600AA7EE4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E37F8D254E0E450032AC01 /* HealthKit.framework */; };
+		B15E6B8D2562FE2500AA7EE4 /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E6B8C2562FE2400AA7EE4 /* MicrophoneMonitor.swift */; };
+		B15E6B922563024600AA7EE4 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E6B912563024600AA7EE4 /* Visualizer.swift */; };
 		B1E37F4C2549D10E0032AC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E37F4B2549D10E0032AC01 /* AppDelegate.swift */; };
 		B1E37F4E2549D10E0032AC01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E37F4D2549D10E0032AC01 /* SceneDelegate.swift */; };
 		B1E37F532549D10E0032AC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E37F512549D10E0032AC01 /* Main.storyboard */; };
@@ -42,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10FB94B255E06DF00B582B8 /* AlarmClockPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockPicker.swift; sourceTree = "<group>"; };
+		B15E6B8C2562FE2400AA7EE4 /* MicrophoneMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneMonitor.swift; sourceTree = "<group>"; };
+		B15E6B912563024600AA7EE4 /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
 		B1E37F482549D10E0032AC01 /* Nap Cycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nap Cycle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E37F4B2549D10E0032AC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E37F4D2549D10E0032AC01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +70,8 @@
 		B1E37F852549D2980032AC01 /* information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = information.swift; sourceTree = "<group>"; };
 		B1E37F872549D2A80032AC01 /* settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 		B1E37F892549D8310032AC01 /* navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation.swift; sourceTree = "<group>"; };
+		B1E37F8B254E0E450032AC01 /* Nap Cycle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Nap Cycle.entitlements"; sourceTree = "<group>"; };
+		B1E37F8D254E0E450032AC01 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15E6B812561D1C600AA7EE4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +107,7 @@
 				B1E37F612549D1100032AC01 /* Nap CycleTests */,
 				B1E37F6C2549D1100032AC01 /* Nap CycleUITests */,
 				B1E37F492549D10E0032AC01 /* Products */,
+				B1E37F8C254E0E450032AC01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +124,11 @@
 		B1E37F4A2549D10E0032AC01 /* Nap Cycle */ = {
 			isa = PBXGroup;
 			children = (
+				B1E37F8B254E0E450032AC01 /* Nap Cycle.entitlements */,
 				B1E37F4B2549D10E0032AC01 /* AppDelegate.swift */,
 				B1E37F4D2549D10E0032AC01 /* SceneDelegate.swift */,
 				B1E37F512549D10E0032AC01 /* Main.storyboard */,
+				B15E6B912563024600AA7EE4 /* Visualizer.swift */,
 				B1E37F542549D10F0032AC01 /* Assets.xcassets */,
 				B1E37F562549D10F0032AC01 /* LaunchScreen.storyboard */,
 				B1E37F592549D10F0032AC01 /* Info.plist */,
@@ -127,6 +140,8 @@
 				B1E37F852549D2980032AC01 /* information.swift */,
 				B1E37F872549D2A80032AC01 /* settings.swift */,
 				B1E37F892549D8310032AC01 /* navigation.swift */,
+				B10FB94B255E06DF00B582B8 /* AlarmClockPicker.swift */,
+				B15E6B8C2562FE2400AA7EE4 /* MicrophoneMonitor.swift */,
 			);
 			path = "Nap Cycle";
 			sourceTree = "<group>";
@@ -147,6 +162,14 @@
 				B1E37F6F2549D1100032AC01 /* Info.plist */,
 			);
 			path = "Nap CycleUITests";
+			sourceTree = "<group>";
+		};
+		B1E37F8C254E0E450032AC01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E37F8D254E0E450032AC01 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E37F802549D24E0032AC01 /* safeguard.swift in Sources */,
+				B15E6B8D2562FE2500AA7EE4 /* MicrophoneMonitor.swift in Sources */,
+				B10FB94C255E06DF00B582B8 /* AlarmClockPicker.swift in Sources */,
 				B1E37F822549D25D0032AC01 /* sleep.swift in Sources */,
 				B1E37F7E2549D22F0032AC01 /* selection.swift in Sources */,
 				B1E37F882549D2A80032AC01 /* settings.swift in Sources */,
+				B15E6B922563024600AA7EE4 /* Visualizer.swift in Sources */,
 				B1E37F842549D2750032AC01 /* wakeup.swift in Sources */,
 				B1E37F7C2549D2200032AC01 /* titlepage.swift in Sources */,
 				B1E37F4C2549D10E0032AC01 /* AppDelegate.swift in Sources */,
@@ -394,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -448,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -462,7 +488,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Nap Cycle/Nap Cycle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KM3LBT4KHM;
 				INFOPLIST_FILE = "Nap Cycle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,7 +507,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Nap Cycle/Nap Cycle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KM3LBT4KHM;
 				INFOPLIST_FILE = "Nap Cycle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
