@@ -6,3 +6,5 @@ To learn more, <a href="https://github.com/benjihillard/Nap-Cycle/blob/master/Bu
 
 
 [![](/nap-cycle.gif)](https://www.youtube.com/watch?v=QUMfqyd5rXc)
+
+Click [here](https://www.youtube.com/watch?v=QUMfqyd5rXc) or on the gif to see a demo.
